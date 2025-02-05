@@ -1,0 +1,128 @@
+.skills {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.skills-column {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.skills-subtitle {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.skills-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+  border-radius: 2px;
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.skill-percentage {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  border-radius: 4px;
+  position: relative;
+  transition: width 1s ease-in-out;
+}
+
+.skill-progress-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(3px);
+}
+
+.interests-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.interest-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.interest-title {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.interest-description {
+  color: #6c757d;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0;
+  }
+} 
