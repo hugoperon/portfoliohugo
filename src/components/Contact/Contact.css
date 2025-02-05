@@ -67,26 +67,26 @@
 .social-links {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin: 1.5rem 0;
 }
 
 .social-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #f8f9fa;
+  background: rgba(52, 152, 219, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #3498db;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .social-link:hover {
   background: #3498db;
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
 
 .contact-form-container {

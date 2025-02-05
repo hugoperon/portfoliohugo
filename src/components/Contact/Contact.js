@@ -17,6 +17,13 @@ function Contact() {
     error: null
   });
 
+  const socialLinks = [
+    { icon: 'fab fa-facebook-f', url: portfolioData.contact.social.facebook },
+    { icon: 'fab fa-instagram', url: portfolioData.contact.social.instagram },
+    { icon: 'fab fa-linkedin-in', url: portfolioData.contact.social.linkedin },
+    { icon: 'fab fa-github', url: portfolioData.contact.social.github }
+  ];
+
   useEffect(() => {
     // Initialiser EmailJS avec votre clé publique
     emailjs.init('36zmkaZTaI1Z4FGCI');
@@ -143,30 +150,17 @@ function Contact() {
               </div>
 
               <div className="social-links">
-                <a 
-                  href={portfolioData.contact.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <i className="ti-linkedin"></i>
-                </a>
-                <a 
-                  href={portfolioData.contact.social.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <i className="ti-github"></i>
-                </a>
-                <a 
-                  href={portfolioData.contact.social.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <i className="ti-youtube"></i>
-                </a>
+                {socialLinks.map((link, index) => (
+                  <a 
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
+                    <i className={link.icon}></i>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
