@@ -1,6 +1,7 @@
 import React from 'react';
 import { portfolioData } from '../../data/portfolioData';
 import './About.css';
+import avatar from '../../assets/imgs/avatar.jpg';
 
 function About() {
   const socialLinks = [
@@ -77,7 +78,7 @@ function About() {
             <div className="profile-card">
               <div className="profile-image-container">
                 <img 
-                  src="/assets/imgs/avatar.jpg" 
+                  src={avatar}
                   alt="Portrait professionnel"
                   className="profile-image"
                 />
