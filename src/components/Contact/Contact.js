@@ -21,7 +21,6 @@ function Contact() {
     { icon: 'fab fa-facebook-f', url: portfolioData.contact.social.facebook },
     { icon: 'fab fa-instagram', url: portfolioData.contact.social.instagram },
     { icon: 'fab fa-linkedin-in', url: portfolioData.contact.social.linkedin },
-    { icon: 'fab fa-github', url: portfolioData.contact.social.github }
   ];
 
   useEffect(() => {
