@@ -69,7 +69,6 @@ function About() {
             </div>
 
             <div className="cta-group">
-              <button className="cta-button primary">Voir mes projets</button>
               <button className="cta-button secondary">Télécharger CV</button>
             </div>
           </div>
