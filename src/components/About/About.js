@@ -78,7 +78,6 @@ function About() {
                 className="cta-button secondary"
                 onClick={handleDownloadCV}
               >
-                <i className="fas fa-download"></i>
                 Télécharger CV
               </button>
             </div>
