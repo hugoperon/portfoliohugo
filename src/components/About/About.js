@@ -11,11 +11,6 @@ function About() {
     { icon: 'fas fa-envelope', url: `mailto:${portfolioData.contact.email}` }
   ];
 
-  const handleDownloadCV = () => {
-    const cvUrl = `${process.env.PUBLIC_URL}/assets/cv/CV_Hugo_Peron.pdf`;
-    window.open(cvUrl, '_blank');
-  };
-
   return (
     <section className="about">
       <div className="about-container">
@@ -74,12 +69,7 @@ function About() {
             </div>
 
             <div className="cta-group">
-              <button 
-                className="cta-button secondary"
-                onClick={handleDownloadCV}
-              >
-                Télécharger CV
-              </button>
+              <button className="cta-button secondary">Télécharger CV (bientôt disponible)</button>
             </div>
           </div>
 
