@@ -6,18 +6,18 @@ function Skills() {
   return (
     <section className="skills">
       <div className="skills-container">
-        <h2 className="section-title">
+        <h1 className="section-title">
           <span className="highlight">Compétences</span>
-        </h2>
+        </h1>
 
         <div className="skills-grid">
           <div className="skills-column">
-            <h3 className="skills-subtitle">Compétences Techniques</h3>
+            <h2 className="skills-subtitle">Compétences Techniques</h2>
             <div className="skills-list">
               {portfolioData.skills.technical.map((skill, index) => (
                 <div key={index} className="skill-item">
                   <div className="skill-info">
-                    <span className="skill-name">{skill.name}</span>
+                    <h3 className="skill-name">{skill.name}</h3>
                     <span className="skill-percentage">{skill.level}%</span>
                   </div>
                   <div className="skill-bar">

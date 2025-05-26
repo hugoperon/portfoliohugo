@@ -23,7 +23,8 @@ function About() {
           <div className="about-text-section">
             <h1 className="about-title">
               <span className="highlight">Développeur Full Stack</span>
-              <br />Passionné par l'Innovation
+              <br />
+              Passionné par l'Innovation
             </h1>
             
             <p className="about-description">
@@ -33,7 +34,7 @@ function About() {
             </p>
 
             <div className="tech-stack">
-              <h3>Technologies favorites</h3>
+              <h2 className="section-subtitle">Technologies favorites</h2>
               <div className="tech-tags">
                 <span className="tech-tag">React</span>
                 <span className="tech-tag">TypeScript</span>
@@ -44,7 +45,7 @@ function About() {
             </div>
 
             <div className="personal-interests">
-              <h3>Centres d'intérêt</h3>
+              <h2 className="section-subtitle">Centres d'intérêt</h2>
               <div className="interest-tags">
                 <span className="interest-tag">Drone</span>
                 <span className="interest-tag">Automobile</span>
